@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>User Input Form</title>
+{{!-- <link rel="stylesheet" type="text/css" href="styles.css"> --}}
+  <style>
+    body {
+    font-family: sans-serif;
+    margin: 40px;
+    background-color: #3cbfd3;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  form {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    {{!-- margin: 500px; --}}
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  #can{
+    background-color: red;
+    height: 30px;
+    width: 80px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  #can:hover{
+    cursor: pointer;
+    color: white;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  .box{
+    padding-left: 520px;
+    padding-top: 120px;
+  }
+  
+  </style>
+ </head>
+<body>
+  {{!-- <h1>Write </h1> --}}
+  {{> navbar}}
+  <div class="box">
+  <p>Write a Comment here..</p>
+  <form method="POST" action="/posts/comment/submit/{{ID}}">
+    <label for="user">User : </label>
+    <input type="text" id="user" name="user" required><br><br>
+    <label for="body">Comment : </label>
+    <input type="text" id="body" name="body" required><br><br>
+    <button type="button" id="can">Cancel</button>
+    <input type="submit" value="Post Comment">
+  </form>
+  </div>
+  <script>
+    document.getElementById('can').addEventListener('click', function (event) {
+            window.location.href = '/posts/my';
+        });
+  </script>
+</body>
+</html>
