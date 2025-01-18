@@ -35,7 +35,6 @@ app.get('/',(req,res) => {
 const blogRouter = require('./routes/blog');
 app.use('/', blogRouter);
 
-// Connect to the database
 const dbConnect = require('./config/database');
 dbConnect();
 
