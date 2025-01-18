@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/utils.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="/mobile.css">
+    {{!--
+    <link rel="stylesheet" type="text/css" href="main.css"> --}}
+    <style>
+        #no{
+            padding: 30px 0px 0px 100px;
+        }
+    </style>
+    <title>MyBlogs</title>
+</head>
+<body>
+    {{> navbar}}
+    {{#if pairs.length}}
+    <div class="home-articles max-width-1 m-auto font2">
+        <h2>My Blogs</h2>
+        {{#each pairs}}
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="../../img/imgba.avif" alt="article">
+            </div>
+            <div class="home-article-content font1">
+                <a href="/posts/my/{{this.id}}">
+                    <h3>{{this.title}}</h3>
+                </a>
+                <span>{{this.time}}</span>
+            </div>
+        </div>
+        {{/each}}
+        {{else}}
+        <h2 id="no">No Blogs found</h2>
+    </div>
+    {{/if}}
+</body>
+
+</html>

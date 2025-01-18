@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../newblog.css">
+    <title>Blog Website</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mb-4">Edit Blog</h1>
+        <form action="/posts/edit/{{ID}}?_method=PUT" method="POST">
+            {{> body }}
+        </form>
+    </div>
+    <script>
+        document.getElementById('ater').addEventListener('click', function (event) {
+            window.location.href = '/posts';
+        });
+    </script>
+</body>
+</html>

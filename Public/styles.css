@@ -1,0 +1,61 @@
+body {
+    font-family: sans-serif;
+    margin: 40px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  form {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  #can{
+    background-color: red;
+    height: 30px;
+    width: 80px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  #can:hover{
+    cursor: pointer;
+    color: white;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  

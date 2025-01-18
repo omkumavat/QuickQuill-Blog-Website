@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../utils.css">
+    <link rel="stylesheet"  type="text/css" href="../style.css">
+    <link rel="stylesheet"  type="text/css" href="../mobile.css">
+    <link rel="stylesheet"  type="text/css" href="../main.css">
+    <title>QuickQuill</title>
+</head>
+
+<body>
+    {{> navbar}}
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+    <div class="m-auto content max-width-1 my-2">
+        <div class="content-left">
+            <h1>"Inspiring Minds, One Post at a Time"</h1>
+            <p>QuickQuill is a website which lets you submit an article which upon approval will be up on our website and you
+                can get a good amount of reach from here!</p>
+            <p>My Halloween decorations are staying in the box this year. To be honest, they didn’t make it out of the
+                box last year either. My Halloween spirit has officially been bludgeoned to death by teenagers who no
+                longer care and a persistent October fear of the Northern California wildfires. And speaking of fear,
+                isn’t there more than enough of that going around? Maybe all of us can pretend that Halloween isn’t even
+                happening this year?</p>
+        </div>
+        <div class="content-right">
+            <img src="/img/blogimg2.png" alt="iBlog">
+        </div>
+    </div>
+
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+    <br>
+    {{!-- <div class="btn"> --}}
+        <button id="btn"><a href="/posts/create" class="btn-success" id="btc">Create Blog</a></button><br>
+    {{!-- </div> --}}
+    <div class="home-articles max-width-1 m-auto font2">
+        <h2>Featured Blogs</h2>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="img/3.png" alt="article">
+            </div>
+            <div class="home-article-content font1">
+                <a href="../ResponsiveBlogTemplate/blogpost.html">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                </a>
+                <div>Author Name</div>
+                <span>07 January | 6 min read</span>
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="img/1.png" alt="article">
+            </div>
+            <div class="home-article-content font1">
+                <a href="/blogpost.html">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                </a>
+                <div>Author Name</div>
+                <span>07 January | 6 min read</span>
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="img/2.png" alt="article">
+            </div>
+            <div class="home-article-content font1">
+                <a href="/blogpost.html">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                </a>
+
+                <div>Author Name</div>
+                <span>07 January | 6 min read</span>
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="img/1.png" alt="article">
+            </div>
+            <div class="home-article-content font1">
+                <a href="/blogpost.html">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                </a>
+
+                <div>Author Name</div>
+                <span>07 January | 6 min read</span>
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="img/11.svg" alt="article">
+            </div>
+            <div class="home-article-content font1">
+                <a href="/blogpost.html">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                </a>
+
+                <div>Author Name</div>
+                <span>07 January | 6 min read</span>
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="img/3.png" alt="article">
+            </div>
+            <div class="home-article-content font1">
+                <a href="/blogpost.html">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                </a>
+
+                <div>Author Name</div>
+                <span>07 January | 6 min read</span>
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="img/2.png" alt="article">
+            </div>
+            <div class="home-article-content font1">
+                <a href="/blogpost.html">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                </a>
+
+                <div>Author Name</div>
+                <span>07 January | 6 min read</span>
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="img/11.svg" alt="article">
+            </div>
+            <div class="home-article-content font1">
+                <a href="/blogpost.html">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                </a>
+
+                <div>Author Name</div>
+                <span>07 January | 6 min read</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer" style="background-color: #333;">
+        <p>Copyright &copy; QuickQuill.com </p>
+        {{!-- <a href="https://www.vecteezy.com/free-vector/typewriter">Vector Credits: Vecteezy</a> --}}
+    </div>
+    <script>
+         document.getElementById('btn').addEventListener('click', function (event) {
+            window.location.href = '/posts/create';
+        }); 
+    </script>
+</body>
+
+</html>
